@@ -1,0 +1,130 @@
+\documentclass[12pt,a4paper]{article} %Formato de plantilla a utilizar
+\usepackage[utf8]{inputenc}  %paquete para trabajar en español
+\usepackage[spanish]{babel} %Paquete para trabajar en español
+\usepackage{graphicx} %Para insertar imagenes
+\usepackage[left=2.54cm, right=2.54cm, top=2.54cm]{geometry} %Margenes
+\usepackage{fancyhdr} %Define el estilo de la página y cabecera
+\usepackage{parskip} %Arreglo de la tabulacion
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+\usepackage[usenames, dvipsnames]{xcolor}
+\usepackage{xspace}
+\usepackage{subfig}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage[T1]{fontenc}
+\usepackage{adjustbox}
+\usepackage{amssymb}
+\usepackage{times}
+\usepackage{grffile}
+\usepackage{etoolbox}
+\usepackage{pgfplots}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{pgf}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{babel}
+
+%&Colores para introducir el codigo de aklgun lenguaje de programacion
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolor}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolor},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2
+}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\setcounter{secnumdepth}{4} % Configura la profundidad de numeración de secciones
+\setcounter{tocdepth}{4} % Configura la profundidad de inclusión en el índice
+
+%Declaración de variables
+\newcommand{\logouni}{Imagenes/Logo.png}
+\newcommand{\startDate}{29 de Octubre del 2023}
+\renewcommand{\contentsname}{}
+
+%Cabecera
+\pagestyle{fancy}
+\setlength{\headheight}{50.2pt}
+\fancyhf{}
+\chead{\includegraphics[width=2cm]{\logouni}}
+\lhead{CT3233 - Sistemas de potencia I\\ Ing. Luis Andrade}
+\rhead{Tarea \#2\\ Semana 8}
+%Pie de página
+\lfoot{Tema \#2}
+\cfoot{Página\ \thepage}
+\rfoot{Métodos Numéricos}
+\renewcommand{\footrulewidth}{0.08pt}
+\setcounter{page}{2}
+%Comienzo del documento
+\begin{document}
+
+% Inicio de la portada
+	\begin{titlepage}
+	%parte superior
+		\centering
+		\includegraphics[width=0.3\textwidth]{\logouni}\par\vspace{0.2cm}
+		{\scshape\LARGE UNIVERSIDAD SIMÓN BOLIVAR}\vspace{0.2cm}\\
+		{\scshape \large DEPARTAMENTO DE CONVERSIÓN Y TRANSPORTE DE ENERGÍA}\vspace{0.2cm}\\
+		{\large CT-3233 - SISTEMAS DE POTENCIA I}\par
+		{\large SECCIÓN 1}\par
+		\vspace{5cm}
+	%Titulo del trabajo
+		\centering
+		{\scshape \LARGE \textbf{TAREA\#2:}\par \vspace{0.2cm} ECUACIONES NO LINEALES POR JACOBI, GS Y NR}\par
+		\vspace{5cm}
+	% nombre del estudiante
+		\begin{minipage}{0.25\textwidth}
+			{\large \textbf{Autor:}}\\
+			{\large Leonardo Madriz \\ Carnet:  20-10399}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.25\textwidth}
+			{\large \textbf{Profesor:}}\\
+			{\large Ing. Luis Andrade}
+		\end{minipage}
+	\end{titlepage}
+% Final de la portada
+	\clearpage
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  	\tableofcontents
+	\clearpage
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	\include{instrucciones}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	\include{python}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	\include{problema1}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    \include{problema2}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    \include{problema3}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    \include{problema4}
+\end{document}

@@ -1,0 +1,5 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}INSTRUCCIONES}{2}{section.1}%
+\contentsline {section}{\numberline {2}CODIGO DE PYTHON}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Método de Jacobi}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Método de Gauss-Seidel}{4}{subsection.2.2}%
